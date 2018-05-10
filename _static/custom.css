@@ -1,0 +1,76 @@
+div.document {
+    width: auto;
+    max-width: 1500px;
+}
+
+div.bodywrapper {
+    margin: 0 20px 0 320px;
+}
+
+div.body {
+    max-width: none;
+    padding: 0px 0px 0px 30px;
+}
+
+div.sphinxsidebar {
+    width: 300px;
+    margin: 0 0 0 20px;
+    position: absolute;
+    background: #eeeeee;
+}
+
+div.footer {
+    width: auto;
+    margin: 20px 20px 30px 320px;
+    text-align: center;
+}
+
+div.sphinxsidebarwrapper h1.logo {
+    font-weight: normal;
+}
+
+div.sphinxsidebarwrapper h1.logo > a {
+    border-bottom: none;
+}
+
+div.sphinxsidebarwrapper ul li.toctree-l1 > a {
+    font-weight: bold;
+}
+
+div.sphinxsidebarwrapper hr {
+    width: 90%;
+}
+
+div.thanks {
+    background-color: #CFC;
+    border: 1px solid #AFA;
+}
+
+div.index_main {
+    padding: 0;
+    width:80%;
+    max-width: 1500px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+div.index_footer {
+    text-align:center;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+div.sphinxsidebarwrapper h2 {
+    font-family: 'Garamond', 'Georgia', serif;
+    color: #444;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+#tags, #author {
+    font-family: 'Garamond', 'Georgia', serif;
+    color: #444;
+}

@@ -1,0 +1,2 @@
+/mkdist.sh      export-ignore
+.git*           export-ignore

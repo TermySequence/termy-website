@@ -1,0 +1,11 @@
+_build/
+__pycache__/
+*.tar.*
+
+*~
+.#*
+*.bak
+*.orig
+*.rej
+*.swp
+.directory

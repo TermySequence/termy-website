@@ -1,0 +1,81 @@
+<!DOCTYPE html public '-//W3C//DTD HTML 4.01//EN' 'http://www.w3.org/TR/html4/strict.dtd'>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>TermySequence Main Page</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/custom.css" type="text/css"/>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9"/>
+  </head>
+  <body>
+    <div class="document body index_main" style="margin-top:50px" role="main">
+      <h1>TermySequence</h1>
+      <div class="admonition">
+        <p>TermySequence is:
+          <ul>
+            <li>A <a href="doc/protocol.html">protocol specification</a> for a multiplexing terminal emulator server with <a href="#server-features">many features</a>.
+            <li>A <a href="doc/server.html">server implementation</a> written in cross-platform, multithreaded C++ with minimal dependencies.
+            <li>A Qt-based <a href="doc/client-qt.html">client implementation</a> with its own <a href="#client-features">set of features</a>, including a <a href="doc/plugins/index.html">plugin system</a> using an embedded <a href="https://developers.google.com/v8/">Chrome V8</a> Javascript engine.
+            <li><strong>A terminal emulation system with a focus on connectivity, productivity, and collaboration.</strong>
+            <li>Free software, <a href="doc/license.html">licensed</a> under GPLv2.
+          </ul>
+        </p>
+      </div>
+      <p>Already using TermySequence? Visit the <a href="user/">users' page</a> for news and updates.</p>
+      <div class="admonition warning">
+        <p>TermySequence is currently testing on 64-bit Fedora 28. Download and install from <a href="https://copr.fedorainfracloud.org/coprs/ewalsh/termysequence/">COPR</a>. Try a <a href="doc/build.html">source build</a> on other distros.</p>
+      </div>
+        <ul>
+          <li><a href="doc/getting-started.html">Getting started with TermySequence</a>
+          <li><a href="doc/index.html">Online documentation home</a>
+          <li><a href="releases/index.html">Tagged source releases</a>
+          <li><a href="https://github.com/TermySequence">TermySequence on github</a>
+        </ul>
+      <p><img alt="Screenshot of qtermy application" src="_images/screenshot.png" /></p>
+      <a name="server-features"></a><h2>Server Features</h2>
+      <ul>
+        <li><a href="doc/concepts.html#term-connection-chaining">Connection chaining</a>: Establish connections from client to server and from server to server using common login commands. Connect directly through a terminal or in the background.
+        <li><strong>Ideal for use with containers.</strong> Minimal size and dependency footprint. Establish connections using standard container login commands. Works with any container runtime.
+        <li>Filesystem access available to connected clients. Download, upload, mount, pipe, and more across any number of hops over the same connection used for terminals.
+        <li>Clients automatically receive directory listings for all terminals' current directories.
+        <li>Per-file git status information included in directory listings through the use of dynamically loaded <a href="https://libgit2.github.com/">libgit2</a>.
+        <li>Relative modification times included with each non-empty line of terminal output. Use the <a href="doc/widgets.html#timing">timing widget</a> to view them in the client.
+        <li>Terminal emulators run in separate threads from connections, with scrollback contents downloaded asynchronously. Command output within terminals is not limited by connection speed.
+        <li>Support for multiple simultaneous inbound connections. View and interact with other users' terminals within the context of a shared account. Upload an avatar image which will be displayed to other users on your terminals. Share font and color settings.
+        <li>Attach arbitrary UTF-8 key/value pairs to terminals, servers, and text regions. Create custom <a href="doc/man/monitor.html">monitor scripts</a> to report arbitrary server status information to clients.
+        <li>iTerm2-compatible <a href="doc/shell-integration.html">shell integration</a>.
+        <li>Display inline images using iTerm2-compatible <a href="doc/man/download.html">imgcat and imgls</a> utilities.
+        <li>Create custom port forwarding on demand across any number of hops over the same connection used for terminals.
+        <li><a href="https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda">OSC 8 hyperlinks</a>.
+        <li>Optional socket activation support and unit files allow use as a <a href="doc/systemd.html">systemd user service</a>.
+      </ul>
+      <a name="client-features"></a><h2>Client Features</h2>
+      <ul>
+        <li>Use the <a href="doc/tools/keymap.html">keymap tool</a> to quickly get started with the application. It's a built-in cheat sheet for your key bindings.
+        <li>Autocomplete entire commands using the <a href="doc/tools/suggestions.html">suggestions tool</a>.
+        <li>Implement a wide variety of custom functionality in Javascript using a rich <a href="doc/plugins/action.html">plugin API</a>.
+        <li>Create arbitrary <a href="doc/concepts-qt.html#term-semantic-region">semantic regions</a> in command output using Javascript <a href="doc/plugins/parser.html">parser plugins</a>. Or create them using <a href="doc/plugins/parser.html#smart-hyperlinks">OSC 515 hyperlinks</a> from inside the terminal.
+        <li>Two separate input modes: command mode, for implementing vim-style dual mode keymaps, and selection mode, for mouseless manipulation of text selections.
+        <li>Supplement the terminal viewport with useful <a href="doc/widgets.html">widgets</a> to display marks, minimap, and timing information.
+        <li>Use <a href="doc/dialogs/connect-batch.html">batch connections</a> to establish multiple outbound connections at once, including sequential connections across multiple hops.
+        <li>Create <a href="doc/concepts-qt.html#annotation">annotations</a> at points of interest within the terminal. Annotations are stored on the server and are visible to other users.
+        <li>Display an icon image with each terminal's thumbnail depending on which command is running in the terminal. Switch icons automatically using a <a href="doc/dialogs/icon-rule-editor.html">custom ruleset</a>.
+        <li>Comprehensive <a href="doc/settings/index.html">settings system</a> including <a href="doc/settings/profile.html">terminal profiles</a> and <a href="doc/settings/server.html">per-server settings</a>. Switch terminal profiles automatically using a <a href="doc/dialogs/switch-rule-editor.html">custom ruleset</a>.
+        <li>Giving a demo? Enter presentation mode to hide distractions, increase the terminal font size, and go fullscreen in a single keystroke.
+        <li>Define <a href="doc/settings/launcher.html">launchers</a> to run applications and open files and URL's. Capture remote program output and mount remote files to be opened in local applications. Bind commands to keystrokes.
+        <li>Define <a href="doc/settings/alert.html">alerts</a> to perform a variety of actions when a condition becomes true in a terminal.
+        <li>Custom-rendered <a href="doc/concepts-qt.html#term-emoji">emoji images</a> and box and line drawing characters.
+        <li><strong>&hellip;and many more features</strong>
+      </ul>
+    </div>
+    <div class="footer index_footer">
+      TermySequence&trade; | &copy; 2018 <a href="https://termysequence.com">TermySequence LLC</a>
+    </div>
+    <div class="index_buttons">
+      <a href="https://twitter.com/TermySequence/"><img src="_static/twitter_button.svg"/></a>
+      <a href="/blog/atom.xml"><img src="_static/rss_button.svg"/></a>
+    </div>
+  </body>
+</html>

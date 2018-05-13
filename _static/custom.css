@@ -74,3 +74,16 @@ div.sphinxsidebarwrapper h2 {
     font-family: 'Garamond', 'Georgia', serif;
     color: #444;
 }
+
+div.index_buttons {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+div.index_buttons img {
+    width: 24px;
+    height: 24px;
+}

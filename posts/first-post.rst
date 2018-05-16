@@ -23,7 +23,13 @@ Note that the goal is for the multiplexer to be *integrated*, not for it to be *
 
 A goal of TermySequence is to provide a multiplexer that recognizes itself executing across a connection opened using standard tools normally used to get a shell. With a bit of protocol engineering, it's possible to accomplish this. Once the multiplexers are in communication, the downstream multiplexer can "proxy" the upstream multiplexer and all of its terminals. The connection is no longer just "inside a terminal." Now the client is aware of the connection, the upstream multiplexer, and all its terminals. They can be treated as first-class objects displayed to the user.
 
-Since each multiplexer can proxy outbound connections, the scheme is :term:`recursive <td:connection chaining>`. A multiplexer connected across multiple hops, such as through a jump box or from a remote host into a container, appears to a client as any other multiplexer. Each client sees the entire tree of multiplexers upstream of it. This leads to the next goal:
+Since each multiplexer can proxy outbound connections, the scheme is :term:`recursive <td:connection chaining>`. A multiplexer connected across multiple hops, such as through a jump box or from a remote host into a container, appears to a client as any other multiplexer. Each client sees the entire tree of multiplexers upstream of it.
+
+.. figure:: ../images/webclient-preview.png
+   :alt: Picture of TermySequence web client showing interconnected multiplexers
+   :align: center
+
+   TermySequence WebGL terminal client (in early development)
 
 **Goal #3: One connection is all you need.** Making a connection to a remote system is a lot of work: processes executed, file handles opened, network packets round-tripped, authentication performed. While some tools such as :program:`ssh` have ways of reusing connections, there's a sure-fire way to save time and resources in this area: open a *single connection* and utilize it to the maximum extent possible.
 
@@ -57,4 +63,4 @@ Finally, it's a goal of TermySequence to make it easier to :doc:`write <td:proto
 
 .. rubric:: Footnotes
 
-.. [#] To fully prevent character alignment issues, the multiplexer and client need to agree on the character encoding. The TermySequence protocol :doc:`specifies <td:protocol/unicode>` character widths and combining behavior, but the client must obey them, which may be difficult depending on the rendering libraries used.
+.. [#] To fully prevent character alignment issues, the multiplexer and client need to agree on the character encoding. The TermySequence protocol :doc:`specifies <td:protocol/unicode>` character widths and combining behavior, but the client must obey them, which may be difficult depending on the rendering libraries used. But there is a :ref:`plan <td:protocol-unicode-plan>` to make this more flexible.

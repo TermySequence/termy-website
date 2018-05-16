@@ -9,15 +9,16 @@ termysequence
 
 The main source distribution, containing :program:`termy-server` and :program:`qtermy`.
 
-  * `ChangeLog <https://github.com/TermySequence/termysequence/blob/master/CHANGELOG.md>`_
-  * `termysequence-1.0.0.tar.xz <termysequence-1.0.0.tar.xz>`_
+  * `ChangeLog (termysequence) <https://github.com/TermySequence/termysequence/blob/master/CHANGELOG.md>`_
+  * `termysequence-1.0.1.tar.xz <termysequence-1.0.1.tar.xz>`_
 
 termy-icon-theme
 ----------------
 
 A redistribution of `Adwaita <https://github.com/GNOME/adwaita-icon-theme>`_ and `Oxygen <https://github.com/KDE/oxygen-icons>`_ icons, along with some modified icon images from those themes. Licensed under `LGPLv3 <https://github.com/TermySequence/termy-icon-theme/blob/master/COPYING>`_.
 
-  * `termy-icon-theme-1.0.0.tar.xz <termy-icon-theme-1.0.0.tar.xz>`_
+  * `ChangeLog (termy-icon-theme) <https://github.com/TermySequence/termy-icon-theme/blob/master/CHANGELOG.md>`_
+  * `termy-icon-theme-1.0.1.tar.xz <termy-icon-theme-1.0.1.tar.xz>`_
 
 termy-emoji
 -----------

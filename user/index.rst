@@ -31,10 +31,3 @@ Posts
 
    ../releases/index
    ../screenshot
-
-.. raw:: html
-
-   <div class="index_buttons">
-     <a href="https://twitter.com/TermySequence/"><img src="../_static/twitter_button.svg"/></a>
-     <a href="/blog/atom.xml"><img src="../_static/rss_button.svg"/></a>
-   </div>

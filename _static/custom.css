@@ -46,7 +46,7 @@ div.thanks {
     border: 1px solid #AFA;
 }
 
-div.index_main {
+div.index-main {
     padding: 0;
     width:80%;
     max-width: 1500px;
@@ -54,7 +54,7 @@ div.index_main {
     margin-right:10%;
 }
 
-div.index_footer {
+div.index-footer {
     text-align:center;
     width:80%;
     margin-left:10%;
@@ -75,7 +75,7 @@ div.sphinxsidebarwrapper h2 {
     color: #444;
 }
 
-div.index_buttons {
+div.social-buttons {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -83,7 +83,7 @@ div.index_buttons {
     right: 10px;
 }
 
-div.index_buttons img {
+div.social-buttons img {
     width: 24px;
     height: 24px;
 }

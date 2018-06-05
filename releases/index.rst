@@ -10,7 +10,7 @@ termysequence
 The main source distribution, containing :program:`termy-server` and :program:`qtermy`.
 
   * `ChangeLog (termysequence) <https://github.com/TermySequence/termysequence/blob/master/CHANGELOG.md>`_
-  * `termysequence-1.0.2.tar.xz <termysequence-1.0.2.tar.xz>`_
+  * `termysequence-1.0.3.tar.xz <termysequence-1.0.3.tar.xz>`_
 
 termy-icon-theme
 ----------------

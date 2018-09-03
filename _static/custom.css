@@ -75,15 +75,28 @@ div.sphinxsidebarwrapper h2 {
     color: #444;
 }
 
-div.social-buttons {
+div.navigation-bar {
     margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    padding:10px;
+    text-align:center;
+    background:#eee;
 }
 
-div.social-buttons img {
+div.navigation-bar a {
+    text-decoration:none;
+    padding:10px 24px 10px 24px;
+}
+
+div.navigation-bar a:hover {
+    background-color:#ccc
+}
+
+div.navigation-bar span {
+    vertical-align:middle;
+}
+
+div.navigation-bar img {
     width: 24px;
     height: 24px;
+    vertical-align:middle;
 }

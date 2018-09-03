@@ -18,9 +18,14 @@
 
 {# Nav should appear before content, not after #}
 {%- block content %}
-<div class="social-buttons">
-  <a href="https://twitter.com/TermySequence/"><img src="{{ pathto('_static/twitter_button.svg', 1) }}"/></a>
-  <a href="/blog/atom.xml"><img src="{{ pathto('_static/rss_button.svg', 1) }}"/></a>
+<div class="navigation-bar">
+  <a href="/"><img src="{{ pathto('_static/logo.svg', 1) }}"/> <span>Home</span></a>
+  <a href="/blog.html"> <span>Blog</span></a>
+  <a href="/doc/"> <span>Docs</span></a>
+  <a href="/releases/"> <span>Download</span></a>
+  <a href="https://github.com/TermySequence/termysequence"><img src="{{ pathto('_static/github_button.svg', 1) }}"/> <span>GitHub</span></a>
+  <a href="https://twitter.com/TermySequence/"><img src="{{ pathto('_static/twitter_button.svg', 1) }}"/> <span>Twitter</span></a>
+  <a href="/blog/atom.xml"><img src="{{ pathto('_static/rss_button.svg', 1) }}"/> <span>Feed</span></a>
 </div>
 
 {%- if theme_fixed_sidebar|lower == 'true' %}

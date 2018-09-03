@@ -12,9 +12,8 @@ Links
 -----
 
  * :doc:`Online documentation home <td:index>` • :doc:`td:first-steps` (a :doc:`qtermy <td:client-qt>` tutorial)
- * :doc:`Tagged source releases <../releases/index>`
- * `TermySequence on github <https://github.com/TermySequence>`_
- * New to TermySequence? Visit the `main page </>`_ for an introduction
+ * TermySequence on GitHub: `main repository <https://github.com/TermySequence/termysequence>`_ • `all repositories <https://github.com/TermySequence>`_
+ * New to TermySequence? Visit the `home page </>`_ for an introduction
 
 Posts
 -----

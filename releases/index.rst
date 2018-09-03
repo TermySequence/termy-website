@@ -4,6 +4,9 @@
 Releases
 ========
 
+.. note::
+   Only source releases are currently available here. Refer to :doc:`td:getting-started` for installation instructions.
+
 termysequence-server
 --------------------
 

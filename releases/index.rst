@@ -1,11 +1,83 @@
 .. Copyright © 2018 TermySequence LLC
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
-Releases
-========
+Installation
+============
 
-.. note::
-   Only source releases are currently available here. Refer to :doc:`td:getting-started` for installation instructions.
+.. highlight:: none
+
+Install both **termy-server** and **termy-qt** on workstation/laptop. Install only **termy-server** on headless servers/containers.
+
+Fedora
+------
+
+Supported versions: 28 and up
+
+Install from the official Fedora repositories::
+
+  # dnf install termy-qt termy-server
+
+Ubuntu
+------
+
+Supported versions: 18.04 and up. In the following instructions, substitute the appropriate Ubuntu version if not 18.04.
+
+Enable the Open Build Service repository by creating the file :file:`/etc/apt/sources.list.d/termysequence.list` with these contents::
+
+  deb http://download.opensuse.org/repositories/home:/sigalrm/xUbuntu_18.04 ./
+
+Download and trust the repository key::
+
+  # curl https://download.opensuse.org/repositories/home:/sigalrm/xUbuntu_18.04/Release.key >repo.key
+  # apt-key add repo.key
+
+Refresh the repository list::
+
+  # apt-get update
+
+Install with :program:`apt-get`::
+
+  # apt-get install termy-qt termy-server
+
+OpenSUSE
+--------
+
+Supported versions: Tumbleweed
+
+Enable the Open Build Service repository::
+
+  # zypper addrepo --refresh http://download.opensuse.org/repositories/home:/sigalrm/openSUSE_Tumbleweed/home:sigalrm.repo
+
+Install with :program:`zypper`::
+
+  # zypper install termy-qt termy-server
+
+Arch
+----
+
+Add the following lines to :file:`/etc/pacman.conf`::
+
+  [termysequence]
+  Server = http://download.opensuse.org/repositories/home:/sigalrm/Arch/x86_64
+  SigLevel = Optional TrustAll
+
+Download and trust the repository key::
+
+  # curl https://download.opensuse.org/repositories/home:/sigalrm/Arch/x86_64/home_sigalrm_Arch.key >repo.key
+  # pacman-key --add repo.key
+
+Refresh the repository list::
+
+  # pacman -Sy
+
+Install with :program:`pacman`::
+
+  # pacman -S termy-qt termy-server
+
+.. _source-releases:
+
+Source Releases
+===============
 
 termysequence-server
 --------------------

@@ -17,8 +17,8 @@ So the upcoming 1.1.4 release will switch to writing dotfiles like :file:`.bash_
 
   * The bundled shell integration scripts will be installed into :file:`/usr/share/termy-server` instead of :file:`/etc/profile.d`. Downstream, subpackages will be removed and the scripts will be included in the main :program:`termy-server` package.
 
-  * A new setup script :program:`termy-setup` will replace the current :doc:`termy-systemd-setup <td:man/systemd>`, subsuming its :doc:`functionality <td:systemd>` and also providing the logic to append shell integration code to user dotfiles.
+  * A new setup script :doc:`termy-setup <td:man/setup>` will replace the current :doc:`termy-systemd-setup <td:man/systemd>`, subsuming its :doc:`functionality <td:systemd>` and also providing the logic to append shell integration code to user dotfiles.
 
-  * A new Setup Tasks dialog wrapping :program:`termy-setup` will be added to :program:`qtermy`. It will be shown on first launch and will be accessible from the Help menu. The existing setup prompt will be removed.
+  * A new :doc:`Setup Tasks dialog <td:dialogs/setup-tasks>` wrapping :program:`termy-setup` will be added to :program:`qtermy`. It will be shown on first launch and will be accessible from the Help menu. The existing setup prompt will be removed.
 
 All of this will hopefully result in a simpler and better setup experience going forward. Of course, it's also possible to skip setup entirely and install shell integration manually using the `upstream instructions <https://iterm2.com/shell_integration.html>`_.

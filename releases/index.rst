@@ -8,6 +8,8 @@ Installation
 
 Install both **termy-server** and **termy-qt** on workstation/laptop. Install only **termy-server** on headless servers/containers.
 
+.. _install-fedora:
+
 Fedora
 ------
 
@@ -16,6 +18,8 @@ Supported versions: 28 and up
 Install from the official Fedora repositories::
 
   # dnf install termy-qt termy-server
+
+.. _install-ubuntu:
 
 Ubuntu
 ------
@@ -39,6 +43,8 @@ Install with :program:`apt-get`::
 
   # apt-get install termy-qt termy-server
 
+.. _install-opensuse:
+
 OpenSUSE
 --------
 
@@ -51,6 +57,8 @@ Enable the Open Build Service repository::
 Install with :program:`zypper`::
 
   # zypper install termy-qt termy-server
+
+.. _install-arch:
 
 Arch
 ----
